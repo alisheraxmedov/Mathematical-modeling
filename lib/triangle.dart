@@ -81,7 +81,7 @@ class TriangleCalculatorState extends State<TriangleCalculator> {
       appBar: AppBar(
         iconTheme: const IconThemeData(color: Colors.white),
         toolbarHeight: width * 0.2,
-        backgroundColor: Colors.cyan,
+        backgroundColor: Colors.green,
         title: TextWidget(
           data: "Uchburchak Hisoblagichi",
           color: Colors.white,
@@ -98,13 +98,13 @@ class TriangleCalculatorState extends State<TriangleCalculator> {
               alignment: Alignment.center,
               height: width*0.13,
               width: width*0.5,
-              color: Colors.cyan,
+              color: Colors.green,
               child: DropdownButton<String>(
                 value: selectedTriangleType,
-                dropdownColor: Colors.cyan,
-                focusColor: Colors.cyan,
+                dropdownColor: Colors.green,
+                focusColor: Colors.green,
                 iconEnabledColor: Colors.white,
-                iconDisabledColor: Colors.cyan,
+                iconDisabledColor: Colors.green,
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: width * 0.05,
@@ -214,7 +214,7 @@ class TriangleCalculatorState extends State<TriangleCalculator> {
             ],
             const SizedBox(height: 20),
             ButtonWidget(
-              color: Colors.cyan,
+              color: Colors.green,
               onTap: calculateTriangleProperties,
               text: "Hisoblash",
               width: width,
@@ -223,7 +223,7 @@ class TriangleCalculatorState extends State<TriangleCalculator> {
             if (area != null && height != null && perimeter != null) ...[
               Container(
                 margin: EdgeInsets.only(bottom: width * 0.02),
-                color: Colors.cyan.shade200,
+                color: Colors.green.shade200,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -242,7 +242,7 @@ class TriangleCalculatorState extends State<TriangleCalculator> {
               ),
               Container(
                 margin: EdgeInsets.only(bottom: width * 0.02),
-                color: Colors.cyan.shade200,
+                color: Colors.green.shade200,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -260,7 +260,7 @@ class TriangleCalculatorState extends State<TriangleCalculator> {
                 ),
               ),
               Container(
-                color: Colors.cyan.shade200,
+                color: Colors.green.shade200,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [

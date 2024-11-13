@@ -22,7 +22,7 @@ class TasksCardWidgets extends StatelessWidget {
       onTap: onTap,
       child: Container(
         decoration: BoxDecoration(
-          color: Colors.cyan,
+          color: Colors.green,
           borderRadius: BorderRadius.circular(
             width * 0.03,
           ),

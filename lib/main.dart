@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:triangle/cylinder.dart';
+import 'package:triangle/screen/dedcay.dart';
 import 'package:triangle/triangle.dart';
 import 'package:triangle/widgets/task_card.dart';
 import 'package:triangle/widgets/text.dart';
@@ -30,7 +31,7 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         toolbarHeight: width * 0.2,
-        backgroundColor: Colors.cyan,
+        backgroundColor: Colors.green,
         title: TextWidget(
           data: "Matematik modellashtirish",
           color: Colors.white,
@@ -89,7 +90,7 @@ class HomeScreen extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const TriangleApp(),
+                        builder: (context) => const RadioactiveDecayCalculator(),
                       ),
                     );
                   },
