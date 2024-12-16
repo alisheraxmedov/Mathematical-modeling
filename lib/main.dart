@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:triangle/cylinder.dart';
 import 'package:triangle/screen/dedcay.dart';
+import 'package:triangle/screen/economic.dart';
+import 'package:triangle/screen/simplex.dart';
 import 'package:triangle/triangle.dart';
 import 'package:triangle/widgets/task_card.dart';
 import 'package:triangle/widgets/text.dart';
@@ -90,7 +92,8 @@ class HomeScreen extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const RadioactiveDecayCalculator(),
+                        builder: (context) =>
+                            const RadioactiveDecayCalculator(),
                       ),
                     );
                   },
@@ -98,13 +101,50 @@ class HomeScreen extends StatelessWidget {
                 TasksCardWidgets(
                   width: width,
                   taskNum: 4,
-                  taskName: "Slindr",
+                  taskName: "Aholining o'....",
+                  imagePath: "assets/images/regression.png",
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) =>
+                            const PopulationGrowthCalculator(),
+                      ),
+                    );
+                  },
+                ),
+              ],
+            ),
+            SizedBox(height: width * 0.06),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                TasksCardWidgets(
+                  width: width,
+                  taskNum: 5,
+                  taskName: "Simpleks",
+                  imagePath: "assets/images/simplex.png",
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) =>
+                            const SimplexScreen(),
+                      ),
+                    );
+                  },
+                ),
+                TasksCardWidgets(
+                  width: width,
+                  taskNum: 6,
+                  taskName: "--------",
                   imagePath: "assets/images/triangle.png",
                   onTap: () {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const TriangleApp(),
+                        builder: (context) =>
+                            const PopulationGrowthCalculator(),
                       ),
                     );
                   },
